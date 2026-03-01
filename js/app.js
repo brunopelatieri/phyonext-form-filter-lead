@@ -267,8 +267,9 @@
   function validatePhone() {
     const input = $('#whatsapp');
     const error = $('#phoneError');
+    const digits = input.value.replace(/\D/g, '');
 
-    if (itiInstance && !itiInstance.isValidNumber()) {
+    if (digits.length < 10 || digits.length > 11) {
       input.classList.add('invalid');
       error.classList.add('visible');
       input.focus();
@@ -278,13 +279,6 @@
         error.classList.remove('visible');
         input.removeEventListener('input', handler);
       });
-      return false;
-    }
-
-    if (!itiInstance && !input.value.trim()) {
-      input.classList.add('invalid');
-      error.classList.add('visible');
-      input.focus();
       return false;
     }
 

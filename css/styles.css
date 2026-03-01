@@ -96,14 +96,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 16px 8px;
+  padding: 16px 16px 8px;
+  background: #000;
+  border-bottom: 2px solid rgba(26, 111, 224, 0.3);
 }
 
 .logo {
-  height: 48px;
+  height: 56px;
   width: auto;
+  max-width: 220px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(26, 111, 224, 0.15));
 }
 
 /* ========================================
@@ -539,10 +541,11 @@ form {
 }
 
 .final-logo {
-  height: 80px;
-  width: auto;
+  height: auto;
+  width: 200px;
+  max-width: 80%;
   margin-bottom: 28px;
-  filter: drop-shadow(0 4px 12px rgba(26, 111, 224, 0.2));
+  border-radius: 8px;
 }
 
 .final-title {
@@ -686,11 +689,12 @@ form {
 
 @media (min-width: 600px) {
   .form-header {
-    padding: 28px 24px 12px;
+    padding: 20px 24px 12px;
   }
 
   .logo {
-    height: 56px;
+    height: 64px;
+    max-width: 280px;
   }
 
   .step {
@@ -743,11 +747,12 @@ form {
 
 @media (min-width: 1024px) {
   .form-header {
-    padding: 36px 40px 16px;
+    padding: 24px 40px 16px;
   }
 
   .logo {
-    height: 60px;
+    height: 72px;
+    max-width: 340px;
   }
 
   .step-title {
