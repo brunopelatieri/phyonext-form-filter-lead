@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Phyonext | Automação com IA para Clínicas - Diagnóstico Estratégico Gratuito</title>
+  <meta name="description" content="Descubra como a Inteligência Artificial da Phyonext pode automatizar o atendimento e agendamento de pacientes na sua clínica odontológica ou médica. Receba um diagnóstico estratégico personalizado gratuito.">
+  <meta name="keywords" content="automação clínica, inteligência artificial clínica, IA para dentistas, IA para médicos, agendamento automatizado, atendimento automatizado, chatbot clínica, automação odontológica, automação médica, Phyonext, lead qualificado, CRM clínica, atendimento paciente IA, agendamento paciente IA, automação WhatsApp clínica">
+  <meta name="author" content="Phyonext">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <link rel="canonical" href="https://phyonext.com/diagnostico">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Phyonext | Diagnóstico Estratégico com IA para Clínicas">
+  <meta property="og:description" content="Automatize o atendimento e agendamento de pacientes com Inteligência Artificial. Preencha o formulário e receba um diagnóstico estratégico personalizado para sua clínica.">
+  <meta property="og:url" content="https://phyonext.com/diagnostico">
+  <meta property="og:site_name" content="Phyonext">
+  <meta property="og:image" content="https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phyonext | Automação com IA para Clínicas">
+  <meta name="twitter:description" content="Diagnóstico estratégico gratuito: descubra como automatizar o atendimento da sua clínica com IA.">
+  <meta name="twitter:image" content="https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png">
+
+  <meta name="theme-color" content="#0A2540">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="icon" type="image/png" href="https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Phyonext",
+    "url": "https://phyonext.com",
+    "logo": "https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png",
+    "description": "Automação com Inteligência Artificial para atendimento e agendamento de pacientes em clínicas odontológicas e médicas.",
+    "sameAs": ["https://phyonext.com"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "availableLanguage": "Portuguese"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Diagnóstico Estratégico com IA para Clínicas",
+    "description": "Formulário de diagnóstico para automação com IA no atendimento e agendamento de pacientes.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Phyonext"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@26.6.4/build/css/intlTelInput.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="form-app">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <header class="form-header">
+      <img
+        src="https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png"
+        alt="Phyonext - Automação com IA para Clínicas"
+        class="logo"
+        width="160"
+        height="auto"
+      >
+    </header>
+
+    <main class="form-container">
+      <form id="leadForm" novalidate>
+
+        <!-- Step 1: Nome -->
+        <section class="step active" data-step="1">
+          <div class="step-content">
+            <span class="step-counter">1 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual o seu <strong>nome</strong>? <span class="required">*</span></h1>
+            <p class="step-subtitle">Digite seu nome para nos conhecermos melhor 😁</p>
+            <div class="input-group">
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form-input"
+                placeholder="Digite seu nome completo..."
+                required
+                autocomplete="name"
+                autofocus
+              >
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" data-next="2">
+                OK <span class="btn-icon">✓</span>
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 2: Email -->
+        <section class="step" data-step="2">
+          <div class="step-content">
+            <span class="step-counter">2 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual o seu melhor <strong>e-mail</strong>? <span class="required">*</span></h1>
+            <p class="step-subtitle">Fique tranquilo(a), não enviaremos SPAM.</p>
+            <div class="input-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="seu@email.com"
+                required
+                autocomplete="email"
+              >
+              <span class="input-error" id="emailError">Por favor, insira um e-mail válido.</span>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" data-next="3">
+                OK <span class="btn-icon">✓</span>
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 3: WhatsApp -->
+        <section class="step" data-step="3">
+          <div class="step-content">
+            <span class="step-counter">3 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Informe seu <strong>WhatsApp</strong> <span class="required">*</span></h1>
+            <p class="step-subtitle"><strong>Importante:</strong> Coloque seu <strong>número pessoal</strong>, para que a nossa <strong>IA</strong> entre em contato com você e já te mostre como é a <strong>experiência</strong> de um atendimento bem estruturado utilizando <strong>Inteligência Artificial</strong>.</p>
+            <div class="input-group phone-group">
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                class="form-input"
+                placeholder="Digite sua resposta aqui..."
+                required
+                autocomplete="tel"
+              >
+              <span class="input-error" id="phoneError">Informe um número de WhatsApp válido.</span>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" data-next="4">
+                OK <span class="btn-icon">✓</span>
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 4: Cargo -->
+        <section class="step" data-step="4">
+          <div class="step-content">
+            <span class="step-counter">4 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual o seu <strong>cargo</strong> na clínica? <span class="required">*</span></h1>
+            <p class="step-subtitle">Qual é o seu <strong>papel estratégico</strong> dentro da <strong>empresa</strong>?<br>Essa informação permite que a <strong>IA da Phyonext</strong> adapte o seu <strong>atendimento</strong></p>
+            <div class="radio-group" data-name="cargo">
+              <label class="radio-option" data-value="Sócio">
+                <span class="radio-letter">A</span>
+                <span class="radio-text">Sócio</span>
+              </label>
+              <label class="radio-option" data-value="CEO / Presidente">
+                <span class="radio-letter">B</span>
+                <span class="radio-text">CEO / Presidente</span>
+              </label>
+              <label class="radio-option" data-value="Diretor de vendas">
+                <span class="radio-letter">C</span>
+                <span class="radio-text">Diretor de vendas</span>
+              </label>
+              <label class="radio-option" data-value="Diretor de marketing">
+                <span class="radio-letter">D</span>
+                <span class="radio-text">Diretor de marketing</span>
+              </label>
+              <label class="radio-option" data-value="Diretor (outras áreas)">
+                <span class="radio-letter">E</span>
+                <span class="radio-text">Diretor (outras áreas)</span>
+              </label>
+              <label class="radio-option" data-value="Gerente de vendas">
+                <span class="radio-letter">F</span>
+                <span class="radio-text">Gerente de vendas</span>
+              </label>
+              <label class="radio-option" data-value="Coordenador de vendas">
+                <span class="radio-letter">G</span>
+                <span class="radio-text">Coordenador de vendas</span>
+              </label>
+              <label class="radio-option" data-value="Coordenador de marketing">
+                <span class="radio-letter">H</span>
+                <span class="radio-text">Coordenador de marketing</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 5: Nome da Clínica -->
+        <section class="step" data-step="5">
+          <div class="step-content">
+            <span class="step-counter">5 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual o nome da sua <strong>clínica</strong>? <span class="required">*</span></h1>
+            <p class="step-subtitle">Com essa informação, a <strong>IA da Phyonext</strong> melhora a análise direcionada para a sua clínica.</p>
+            <div class="input-group">
+              <input
+                type="text"
+                id="clinica"
+                name="clinica"
+                class="form-input"
+                placeholder="Nome da sua clínica..."
+                required
+                autocomplete="organization"
+              >
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" data-next="6">
+                OK <span class="btn-icon">✓</span>
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 6: URL do Site -->
+        <section class="step" data-step="6">
+          <div class="step-content">
+            <span class="step-counter">6 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Informe a <strong>URL</strong> do site da sua clínica</h1>
+            <p class="step-subtitle">Vamos analisar sua <strong>presença digital estratégica</strong>. Caso não tenha, deixe em branco (não é obrigatório).</p>
+            <div class="input-group">
+              <div class="url-input-wrapper">
+                <span class="url-prefix">https://</span>
+                <input
+                  type="text"
+                  id="site"
+                  name="site"
+                  class="form-input url-input"
+                  placeholder="www.minhaclinica.com"
+                  autocomplete="url"
+                >
+              </div>
+            </div>
+            <div class="step-actions">
+              <button type="button" class="btn-next" data-next="7">
+                OK <span class="btn-icon">✓</span>
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 7: Faturamento Anual -->
+        <section class="step" data-step="7">
+          <div class="step-content">
+            <span class="step-counter">7 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual seu <strong>faturamento anual</strong> <span class="required">*</span></h1>
+            <p class="step-subtitle">Em qual faixa <strong>sua clínica</strong> se encontra hoje?<br>Isso nos <strong>ajuda a propor</strong> estratégias compatíveis com <strong>sua realidade financeira</strong> e metas.</p>
+            <div class="radio-group" data-name="faturamento">
+              <label class="radio-option" data-value="Ainda não faturamos">
+                <span class="radio-letter">A</span>
+                <span class="radio-text">Ainda não faturamos</span>
+              </label>
+              <label class="radio-option" data-value="Até 300 mil ao ano">
+                <span class="radio-letter">B</span>
+                <span class="radio-text">Até 300 mil ao ano</span>
+              </label>
+              <label class="radio-option" data-value="De 300 mil a 600 mil ao ano">
+                <span class="radio-letter">C</span>
+                <span class="radio-text">De 300 mil a 600 mil ao ano</span>
+              </label>
+              <label class="radio-option" data-value="De 600 mil a 1 milhão ao ano">
+                <span class="radio-letter">D</span>
+                <span class="radio-text">De 600 mil a 1 milhão ao ano</span>
+              </label>
+              <label class="radio-option" data-value="De 1 milhão a 3 milhão ao ano">
+                <span class="radio-letter">E</span>
+                <span class="radio-text">De 1 milhão a 3 milhão ao ano</span>
+              </label>
+              <label class="radio-option" data-value="De 3 milhão a 5 milhão ao ano">
+                <span class="radio-letter">F</span>
+                <span class="radio-text">De 3 milhão a 5 milhão ao ano</span>
+              </label>
+              <label class="radio-option" data-value="Acima de 10 milhão ao ano">
+                <span class="radio-letter">G</span>
+                <span class="radio-text">Acima de 10 milhão ao ano</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 8: Estrutura do Time -->
+        <section class="step" data-step="8">
+          <div class="step-content">
+            <span class="step-counter">8 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Estrutura do <strong>time</strong> de atendimento ao <strong>paciente</strong> <span class="required">*</span></h1>
+            <p class="step-subtitle">Como seu <strong>time de atendimento</strong> está organizado <strong>atualmente</strong>?</p>
+            <div class="radio-group" data-name="time_atendimento">
+              <label class="radio-option" data-value="Sou o único atendente e também acumulo outras funções">
+                <span class="radio-letter">A</span>
+                <span class="radio-text">Sou o único atendente e também acumulo outras funções</span>
+              </label>
+              <label class="radio-option" data-value="1 Atendente">
+                <span class="radio-letter">B</span>
+                <span class="radio-text">1 Atendente</span>
+              </label>
+              <label class="radio-option" data-value="2 a 3 Atendentes">
+                <span class="radio-letter">C</span>
+                <span class="radio-text">2 a 3 Atendentes</span>
+              </label>
+              <label class="radio-option" data-value="4 a 8 Atendentes">
+                <span class="radio-letter">D</span>
+                <span class="radio-text">4 a 8 Atendentes</span>
+              </label>
+              <label class="radio-option" data-value="Acima de 8 Atendentes">
+                <span class="radio-letter">E</span>
+                <span class="radio-text">Acima de 8 Atendentes</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 9: Média Mensal de Leads -->
+        <section class="step" data-step="9">
+          <div class="step-content">
+            <span class="step-counter">9 <span class="step-arrow">→</span> 9</span>
+            <h1 class="step-title">Qual sua <strong>média mensal</strong> de novos <strong>leads</strong>? <span class="required">*</span></h1>
+            <p class="step-subtitle">Quantas novas oportunidades <strong>em média</strong> entram no seu <strong>funil por mês</strong>?<br>(Pessoas novas que conheceram sua clínica via <strong>anúncios, ações, indicações</strong> e etc..)</p>
+            <div class="radio-group" data-name="media_leads">
+              <label class="radio-option" data-value="Até 100 leads mês">
+                <span class="radio-letter">A</span>
+                <span class="radio-text">Até 100 leads mês</span>
+              </label>
+              <label class="radio-option" data-value="Até 200 leads mês">
+                <span class="radio-letter">B</span>
+                <span class="radio-text">Até 200 leads mês</span>
+              </label>
+              <label class="radio-option" data-value="Até 300 leads mês">
+                <span class="radio-letter">C</span>
+                <span class="radio-text">Até 300 leads mês</span>
+              </label>
+              <label class="radio-option" data-value="Até 500 leads mês">
+                <span class="radio-letter">D</span>
+                <span class="radio-text">Até 500 leads mês</span>
+              </label>
+              <label class="radio-option" data-value="Acima 1000 leads mês">
+                <span class="radio-letter">E</span>
+                <span class="radio-text">Acima 1000 leads mês</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 10: Finalização -->
+        <section class="step" data-step="10">
+          <div class="step-content step-final">
+            <img
+              src="https://phyonext.com/wp-content/uploads/2025/01/PHYONEXT-3.png"
+              alt="Phyonext"
+              class="final-logo"
+              width="140"
+            >
+            <h1 class="final-title">
+              Recebemos suas informações!<br>
+              Falta pouco para você receber um<br>
+              <strong>diagnóstico estratégico personalizado.</strong>
+            </h1>
+            <p class="final-text">
+              Obrigado por dar esse passo rumo a uma operação comercial mais previsível e escalável.
+              A equipe da <strong>Phyonext</strong> analisará seu perfil e estrutura para propor o melhor caminho estratégico.
+              <br><br>
+              Em breve, nossa <strong>IA</strong> entrará em contato pelo seu <strong>WhatsApp</strong> para iniciar seu atendimento personalizado.
+            </p>
+            <div class="step-actions">
+              <button type="submit" class="btn-submit" id="btnSubmit">
+                Enviar
+              </button>
+              <span class="btn-hint">Pressione <strong>Enter ↵</strong></span>
+            </div>
+          </div>
+        </section>
+
+      </form>
+    </main>
+
+    <!-- Navigation Arrows -->
+    <nav class="nav-arrows" id="navArrows">
+      <button type="button" class="nav-arrow nav-prev" id="btnPrev" aria-label="Etapa anterior" disabled>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+      </button>
+      <button type="button" class="nav-arrow nav-next-arrow" id="btnNext" aria-label="Próxima etapa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </nav>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="spinner"></div>
+      <p>Enviando suas informações...</p>
+    </div>
+
+    <!-- Success overlay -->
+    <div class="success-overlay" id="successOverlay">
+      <div class="success-content">
+        <div class="success-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h2>Formulário enviado com sucesso!</h2>
+        <p>Nossa IA entrará em contato pelo seu WhatsApp em breve. Aguarde nosso atendimento personalizado.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@26.6.4/build/js/intlTelInput.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
