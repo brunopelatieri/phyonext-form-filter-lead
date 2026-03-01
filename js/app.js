@@ -44,14 +44,13 @@
 
     itiInstance = intlTelInput(phoneInput, {
       initialCountry: 'br',
-      countryOrder: ['br', 'us', 'pt', 'ar', 'co', 'mx'],
+      preferredCountries: ['br', 'us', 'pt', 'ar', 'co', 'mx'],
       separateDialCode: true,
-      loadUtils: () => import('https://cdn.jsdelivr.net/npm/intl-tel-input@26.6.4/build/js/utils.js'),
+      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js',
       i18n: {
         searchPlaceholder: 'Buscar país...',
       },
-      strictMode: true,
-      formatAsYouType: true,
+      formatOnDisplay: true,
     });
   }
 
@@ -91,15 +90,16 @@
     const goingForward = step > currentStep;
 
     currentEl.classList.remove('active');
-    currentEl.classList.add(goingForward ? 'exit-up' : '');
-    currentEl.classList.remove(goingForward ? '' : 'exit-up');
+    if (goingForward) {
+      currentEl.classList.add('exit-up');
+    }
 
     setTimeout(() => {
       currentEl.classList.remove('exit-up');
     }, 400);
 
     nextEl.style.transform = goingForward ? 'translateY(40px)' : 'translateY(-40px)';
-    nextEl.offsetHeight; // force reflow
+    void nextEl.offsetHeight;
     nextEl.classList.add('active');
 
     currentStep = step;
