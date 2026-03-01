@@ -96,7 +96,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px 8px;
+  padding: 20px 16px 20px;
   background: transparent;
 }
 
@@ -502,10 +502,11 @@ form {
 .nav-arrows {
   position: fixed;
   bottom: 24px;
-  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  gap: 12px;
   z-index: 50;
 }
 
@@ -513,11 +514,11 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: var(--bg-card);
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.08);
   border: 1.5px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition);
@@ -697,7 +698,7 @@ form {
 
 @media (min-width: 600px) {
   .form-header {
-    padding: 16px 24px 12px;
+    padding: 20px 24px 20px;
   }
 
   .logo {
@@ -740,12 +741,11 @@ form {
 
   .nav-arrows {
     bottom: 32px;
-    right: 32px;
   }
 
   .nav-arrow {
-    width: 46px;
-    height: 46px;
+    width: 52px;
+    height: 52px;
   }
 }
 
@@ -755,7 +755,7 @@ form {
 
 @media (min-width: 1024px) {
   .form-header {
-    padding: 20px 40px 16px;
+    padding: 20px 40px 20px;
   }
 
   .logo {
@@ -786,7 +786,6 @@ form {
 
   .nav-arrows {
     bottom: 40px;
-    right: 48px;
   }
 }
 
